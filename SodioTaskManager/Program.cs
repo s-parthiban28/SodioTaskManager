@@ -3,7 +3,6 @@ using TaskManagementAPI.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
 builder.Services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("TaskDb"));
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -11,7 +10,6 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
