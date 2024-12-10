@@ -1,0 +1,6 @@
+@SodioTaskManager_HostAddress = http://localhost:5247
+
+GET {{SodioTaskManager_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
